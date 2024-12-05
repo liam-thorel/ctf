@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niveau 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Niveau 1</h1>
+    <p id="hiddenHint" style="display: none;">Indice : Regardez attentivement le code source...</p>
+    <button id="showHintButton">Afficher l'indice</button>
+  </header>
+  <main>
+    <p>Félicitations, vous avez commencé ! Mais où se trouve la suite ?</p>
+  </main>
+    <script>
+        document.getElementById('showHintButton').addEventListener('click', function() {
+        document.getElementById('hiddenHint').style.display = 'block';
+        });
+    </script>
+  <!-- Indice caché -->
+  <!-- Le lien vers le prochain niveau est : level2.html -->
+</body>
+</html>

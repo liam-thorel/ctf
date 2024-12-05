@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niveau 2</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Niveau 2</h1>
+    <p id="hiddenHint" style="display: none;">Indice : Entrez le mot de passe pour continuer.</p>
+  </header>
+  <main>
+    <label for="password">Mot de passe :</label>
+    <input type="text" id="password" placeholder="Entrez le mot de passe">
+    <button onclick="checkPassword()">Valider</button>
+    <p id="feedback"></p>
+  </main>
+    <button id="showHintButton">Afficher l'indice</button>
+    <script>
+        document.getElementById('showHintButton').addEventListener('click', function() {
+        document.getElementById('hiddenHint').style.display = 'block';
+        });
+    </script>
+  <!-- Le mot de passe est "h4ckm3" -->
+</body>
+</html>
